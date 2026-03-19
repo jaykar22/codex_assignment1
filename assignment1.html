@@ -1,0 +1,445 @@
+<html>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nevigation{
+            width: 100vw;
+            height: 6.5vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #title{
+            width: 65%;
+            height: 100%;
+            display: flex;
+            font-family: EB Garamond;
+            font-size: 100%;
+            color: rgba(0, 0, 0, 1);
+            text-decoration: none;
+            word-spacing: -2%;
+            align-items: center;
+            padding-left: 5.882%;
+        }
+        .buttons{
+            width: 35%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #button{
+            border-left: 1px solid black;
+            width: 33.33%;
+            height: 100%;
+            display: flex;
+            font-family: EB Garamond;
+            font-size: 87.5%;
+            color: rgba(0, 0, 0, 1);
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+        }
+        #button1{
+            /* border: 1px solid black; */
+            width: 33.33%;
+            height: 100%;
+            display: flex;
+            font-family: EB Garamond;
+            font-size: 87.5%;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 1);
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .main{
+            width: 100vw;
+            height: 2536px;
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+        .hero{
+            width: 100%;
+            height: 32.93%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1597744733354-0499ea376fe9?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+        }
+        #heading{
+            height: 7%;
+            width: 80%;
+            /* border: 1px solid black; */
+            display: flex;
+            font-family: EB Garamond;
+            font-size: 300%;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: -2%;
+        }
+        .gallery{
+            width: 100%;
+            height: 45.86%;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding-top: 64px;
+            padding-bottom: 64px;
+            padding-right: 2.5rem;;
+            padding-left: 2.5rem; 
+            gap: 30px;
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+        .frame1{
+            width: 100%;
+            height: 54.93%;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            /* border: 1px solid black; */
+        }
+        .text-block1{
+            width: 100%;
+            height: 36.62%;
+            background-color: rgba(247, 247, 247, 1);
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            gap: 20px;
+        }
+        #caption1{
+            font-family: EB Garamond;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: -2%;
+            text-decoration: none;
+        }
+        .text-content{
+            width: 95%;
+            height: 100%;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .heading2{
+            width: 100%;
+            height: 45.69%;
+            box-sizing: border-box;
+            display: flex;
+            font-family: EB Garamond;
+            font-size: 48px;
+            color: rgba(0, 0, 0, 1);
+            text-decoration: none;
+            gap: -2%;
+        }
+        .large-link1{
+            width: 100%;
+            height: 45.69%;
+            display: flex;
+            box-sizing: border-box;
+            font-family: EB Garamond;
+            font-size: 48px;
+            color: rgba(0, 117, 255, 1);
+            gap: 10px;
+        }
+        .frame2{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 55.87%;
+            box-sizing: border-box;
+            gap: 5.3%;
+            /* padding-right: 64px; */
+            display: flex;
+            align-items: center;
+        }
+        .block1{
+            width: 25%;
+            height: 83.27%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }      
+         .img1-bg{
+            width: 100%;
+            height: 90.57%;
+            background-color: rgba(74, 54, 45, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image1{
+            width: 66.67%;
+            height: 62.89%;
+        }
+        .img1-caption{
+            font-family: EB Garamond;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 1);
+            text-decoration: none;
+            letter-spacing: -2%;
+        }
+        .block2{
+            width: 12.8%;
+            height: 53.1%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .image2{
+            width: 100%;
+            height: 75.91%;
+        }
+        .img2-caption{
+            width: 100%;
+            height: 18%;
+            font-family: EB Garamond;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: -2%;
+        }
+        .block3{
+            width: 17.58%;
+            height: 64.17%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .image3{
+            object-fit: cover;
+            width: 100%;
+            height: 87.88%;
+        }
+        .img3-caption{
+            width: 100%;
+            height: 7.79%;
+            font-family: EB Garamond;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: -2%;
+        }
+        .block4{
+            box-sizing: border-box;
+            width: 28.5%;
+            height: 92.16%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .image4{
+            box-sizing: border-box;
+            object-fit: cover;
+            width: 100%;
+            height: 92.16%;
+        }
+        .img4-caption{
+            width: 100%;
+            height: 5.04%;
+            font-family: EB Garamond;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: -2%;
+        }
+        .about{
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+            width: 70.31%;
+            height: 31.47%;
+            display: flex;
+            flex-direction: column;
+            gap: 8.20%;
+        }
+        .info-about{
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+            width: 100%;
+            height: 86.89%;
+            font-family: EB Garamond;
+            font-size: 48px;
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: -2%;
+            gap: 60px;
+        }
+        .large-link2{
+            font-family: EB Garamond;
+            font-size: 48px;
+            color: rgba(0, 117, 255, 1);
+        }
+        .date-section{
+            width: 100%;
+            height: 21.21%;
+            box-sizing: border-box;
+            padding: 36px 24px 320px 24px;
+            background: linear-gradient(rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1591277089152-3859059790c4?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            gap: 10px;
+        }
+        .text-block2{
+            /* border: 1px solid black; */
+            width: 96.25%;
+            height: 33.83%;
+            gap: 27px;
+            display: flex;
+            flex-direction: column;
+        }
+        .text-caption1{
+            width: 100%;
+            height: 18px;
+            font-family: EB Garamond;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 1);
+            letter-spacing: -2%;
+        }
+        .text-caption2{
+            width: 100%;
+            height: 53px;
+            font-family: EB Garamond;
+            font-size: 48px;
+            color: rgba(255, 255, 255, 1);
+            letter-spacing: -2%;
+        }
+        .booking-button{
+            background-color: rgba(255, 255, 255, 1);
+            padding: 20px 30px;
+            gap: 10;
+            width: 124px;
+            height: 57px;
+            border-radius: 50px;
+        }
+        .footer{
+            background-color: black;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 25%;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            gap: 25px;
+        }
+        .footer-content{
+            width: 100%;
+            height: 133px;
+            padding-left: 40px;
+            padding-left: 40px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .footer-text1{
+            color: white;
+            width: 93.75%;
+            height: 18px;
+            gap: 91px;
+            font-family: EB Garamond;
+            font-size: 16px;
+            letter-spacing: -2%;
+            vertical-align: center;
+        }
+        .line{
+            border: 1px solid white;
+            height: 0px;
+            width: 35px;
+            box-sizing: border-box;
+        }
+        .footer-text2{
+            width: 100%;
+            height: 65px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            box-sizing: border-box;
+        }
+        .footer-text{
+            font-family: EB Garamond;
+            letter-spacing: 0%;
+            color: white;
+            font-size: 14px;
+            letter-spacing: 0%;
+        }
+        .footer-text1{
+            font-family: EB Garamond;
+            letter-spacing: 0%;
+            color: white;
+            font-size: 14px;
+            letter-spacing: 0%;
+        }
+    </style>
+    <body>
+        <div class="nevigation">
+            <a href="" id="title">Shore Guesthouse</a>
+            <div class="buttons">
+                <a href="" id="button">Gallery</a>
+                <a href="" id="button">Information</a>
+                <a href="" id="button1">Book now</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="hero">
+                <p id="heading">Where Comfort and Charm Meet the Aegean</p>
+            </div>
+            <div class="gallery">
+                <div class="frame1">
+                    <div class="text-block1">
+                        <p id="caption1">Gallery</p>
+                        <div class="text-content">
+                            <p class="heading2">Experience Shore Guesthouse.</p>
+                            <a href="" class="large-link1">View Gallery</a>
+                        </div>
+                    </div>
+                    <div class="frame2">
+                        <div class="block1">
+                            <div class="img1-bg">
+                                <img src="https://images.unsplash.com/photo-1533633310920-cc9bf1e7f9b0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="image1">
+                            </div>
+                            <p class="img1-caption">Sink into the plush comfort of the canopy bed.</p>
+                        </div>
+                        <div class="block2">
+                            <img src="https://images.unsplash.com/photo-1563917570459-6394376cc5d5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="image2">
+                            <p class="img2-caption">Unwind in our lounge room</p>
+                        </div>
+                        <div class="block3">
+                            <img src="https://images.unsplash.com/photo-1628246591661-07f4b05f602c?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="image3">
+                            <p class="img3-caption">Explore the open sea.</p>
+                        </div>
+                        <div class="block4">
+                            <img src="https://images.unsplash.com/photo-1628246493110-c34888a9117b?q=80&w=679&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="image4">
+                            <p class="img4-caption">A haven lies behind the blue door.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about">
+                    <p id="caption1">About</p>
+                    <p class="info-about">Tucked into the rugged cliffs of Santorini, the Shore Guesthouse offers a retreat with uninterrupted views of the caldera.</p>
+                    <p class="info-about"><a href="" class="large-link2">Read our story</a> to learn the history behind Shore Guesthouse and the beauty of Santorini.</p>
+                </div>
+            </div>
+            <div class="date-section">
+                <div class="text-block2">
+                    <p class="text-caption1">Plan Your Dream Getaway:</p>
+                    <p class="text-caption2">Summer 2025 Dates Available</p>
+                    <button class="booking-button">Book now</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <p class="footer-text1">Shore Guesthouse</p>
+                <p class="line"></p>
+                <div class="footer-text2">
+                    <p class="footer-text">© 2025 All Rights Reserved</p>
+                    <a  href="" class="footer-text1">hello@figma.com</a>
+                    <p class="footer-text">(646) 555-4567</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
